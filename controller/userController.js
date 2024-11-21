@@ -62,6 +62,7 @@ const getUserForSignIn = async (req,res) =>{
                 res.json({
                     _id:userDetail._id,
                     username:userDetail.username,
+                    role:userDetail.role,
                     token:genrateToken(userDetail._id)
                 })
             } else {
