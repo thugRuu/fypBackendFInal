@@ -52,7 +52,7 @@ const userId = userData._id
 
 try {
     // Make a POST request to the Flask API
-    const response = await axios.post('http://127.0.0.1:5000/predict', answers);
+    const response = await axios.post('https://finalyearproject-py.onrender.com/predict', answers);
     
     // Get the predictions and suggestions from the Flask API
     const { carbon_footprint, suggestions } = response.data;
